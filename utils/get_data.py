@@ -69,7 +69,7 @@ if __name__ == "__main__":
     items = ['时间', '累计确诊', '现存确诊', '现存疑似', '累计治愈', '累计死亡', '现存重症', '新增疑似', '较昨日累计确诊', '较昨日新增治愈', '较昨日新增死亡']
     data = get_data(url, mode)
     data[0] = items
-    with open('data_days.json', 'w', encoding='utf-8') as f:
+    with open('app/data/data_days.json', 'w', encoding='utf-8') as f:
         f.write(json.dumps(data, ensure_ascii=False, indent=4))
     
 
